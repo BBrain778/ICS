@@ -4,7 +4,6 @@ rule DNP3_Read_Write_last365
 {
     meta:
         description = "Detects DNP3 read/write/select/operate behavior using structural multi-byte patterns instead of single-byte codes."
-        author = "Emlyn Research"
         date = "2025-10-30"
         protocol = "DNP3 (IEEE-1815)"
         severity = "medium"
@@ -43,3 +42,4 @@ rule DNP3_Read_Write_last365
             ( any of ($str_*) or any of ($fc_*) )
         )
 }
+
